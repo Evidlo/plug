@@ -1,0 +1,4 @@
+decapitalize ifconfig
+iptables not firewall
+iptables6 useful on ipv6 transition, NAT will go away increasing need for system firewall
+write out a simple example chain - 1 step, then 2 steps

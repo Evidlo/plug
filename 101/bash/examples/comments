@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo now you see me #now you dont
+
+echo none of these \#contain comments
+echo "none of these #contain comments"
+echo 'none of these #contain comments'
+

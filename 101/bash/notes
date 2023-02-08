@@ -1,0 +1,4 @@
+shabang - (magic number) 2 bytes read by system, rest of file is set of commands to be fed
+scripts need rx permissions, bash needs to read and execute
+./ is deliberately left out of PATH for security reasons
+use `command` to get output of command

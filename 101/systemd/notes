@@ -1,0 +1,26 @@
+systemctl and systemctl status
+	get a list of all processes and state
+	see runtime error
+
+all processes spawned by a service are placed in a cgroup
+	processes and children cannot leave their cgroup
+
+systemd-cgls
+	list systemd cgroups in a pretty hierarchal tree
+
+writing systemd units
+	more portable than sysv init scripts
+	[Unit]
+		info about the unit - description, dependencies
+		information specific to unit type (service, mount, socket, etc..)
+	[Service]
+		specifically for services
+		what command to run, what kind of process (forking)
+	[Install]
+		what triggers this unit
+
+	other types
+	dbus - forking was for when init scripts were just Bourne scripts, needed to fork and break off from parent process to daemonize
+		this is unecessary and slow
+		Type=dbus - change type to dbus
+		BusName=com.redhat.abrt - what it appears as on dbus

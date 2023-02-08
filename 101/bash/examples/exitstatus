@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo 'hello world'
+echo 'Status of "echo":' $?
+
+date
+echo 'Status of "date":' $?
+
+lkjlkj
+echo 'Status of "lkjlkj":' $?
+
+#successful commands set $? variable to '0'
+#unsuccessful commands set $? nonzero

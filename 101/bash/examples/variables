@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#by default, interpreted as string or number
+
+var1="this is a string"
+echo $var1
+
+var2='this is also a string'
+echo
+
+command_output=ls
+echo $command_output
